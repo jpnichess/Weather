@@ -26,4 +26,4 @@ Desenvolvida com **HTML, CSS e JavaScript**, consumindo a **API Open-Meteo** par
 
 ## 📸 Ver Projeto Online
 
-![Link da Aplicação](https://weather-git-main-joao-niches-projects.vercel.app)
+![Link da Aplicação](https://jpnichess.github.io/weather/)
