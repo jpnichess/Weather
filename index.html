@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo - Caxias do Sul</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Previsão do Tempo</h1>
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Caxias do Sul, RS</span>
+        </div>
+      </header>
+
+      <div class="current-weather">
+        <div class="weather-card">
+          <i class="fas fa-temperature-high weather-icon"></i>
+          <h3>Temperatura Atual</h3>
+          <div class="weather-value">
+            <span id="current-temp">Carregando...</span
+            ><span class="weather-unit">°C</span>
+          </div>
+        </div>
+
+        <div class="weather-card">
+          <i class="fas fa-sun weather-icon" id="day-night-icon"></i>
+          <h3>Está de dia?</h3>
+          <div class="weather-value" id="is-day">Carregando...</div>
+        </div>
+
+        <div class="weather-card">
+          <i class="fas fa-cloud-rain weather-icon"></i>
+          <h3>Chuva</h3>
+          <div class="weather-value">
+            <span id="rain">Carregando...</span
+            ><span class="weather-unit">mm</span>
+          </div>
+        </div>
+
+        <div class="weather-card">
+          <i class="fas fa-wind weather-icon"></i>
+          <h3>Velocidade do Vento</h3>
+          <div class="weather-value">
+            <span id="wind-speed">Carregando...</span
+            ><span class="weather-unit">km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="daily-forecast">
+        <div class="section-title">
+          <i class="fas fa-calendar-alt fa-lg"></i>
+          <h2>Previsão para os Próximos Dias</h2>
+        </div>
+
+        <div class="days-container" id="daily-buttons">
+          <!-- Botões onde são renderizados os dias -->
+        </div>
+
+        <div class="day-details" id="day-details">
+          <div style="text-align: center; padding: 20px">
+            <i
+              class="fas fa-calendar-day"
+              style="font-size: 3rem; color: #3498db; margin-bottom: 15px"
+            ></i>
+            <p>Clique em um dia para ver detalhes da previsão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
